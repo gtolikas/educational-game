@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 header {
     background-color: #6b4226;
     color: white;
-    padding: 1rem;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -19,6 +19,7 @@ nav ul {
     display: flex;
     justify-content: center;
     background-color: #6b4226;
+    margin: 0;
 }
 
 nav ul li {
@@ -28,12 +29,34 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     display: block;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     background-color: #4d2e1e;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 section {
@@ -45,24 +68,9 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    background: #ececec;
-    border-radius: 4px;
-}
-
 footer {
     background-color: #6b4226;
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
