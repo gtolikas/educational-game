@@ -8,45 +8,50 @@
 </head>
 <body>
     <header>
-        <h1>Το Δέντρο του Καφέ</h1>
-        <nav>
-            <ul>
-                <li><a href="#menu">Μενού</a></li>
-                <li><a href="#offers">Προσφορές</a></li>
-                <li><a href="#contact">Επικοινωνία</a></li>
-                <li><a href="#news">Νέα</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Το Δέντρο του Καφέ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Μενού</a></li>
+                    <li><a href="#offers">Προσφορές</a></li>
+                    <li><a href="#contact">Επικοινωνία</a></li>
+                    <li><a href="#news">Νέα</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="hero">
-            <img src="cafe-image.jpg" alt="Το Δέντρο του Καφέ">
-            <div class="hero-text">
-                <h2>Καλώς ήρθατε στο Το Δέντρο του Καφέ</h2>
-                <p>Ανακαλύψτε τη μαγεία του καφέ στα Εξάρχεια</p>
+        <!-- Άλλες ενότητες της ιστοσελίδας -->
+
+        <section id="game">
+            <div class="container">
+                <h2>Παιχνίδι Μνήμης Καφέ</h2>
+                <div class="memory-game">
+                    <div class="memory-card" data-framework="espresso">
+                        <div class="front-face">Espresso</div>
+                        <div class="back-face">Coffee</div>
+                    </div>
+                    <div class="memory-card" data-framework="espresso">
+                        <div class="front-face">Espresso</div>
+                        <div class="back-face">Coffee</div>
+                    </div>
+                    <div class="memory-card" data-framework="cappuccino">
+                        <div class="front-face">Cappuccino</div>
+                        <div class="back-face">Coffee</div>
+                    </div>
+                    <div class="memory-card" data-framework="cappuccino">
+                        <div class="front-face">Cappuccino</div>
+                        <div class="back-face">Coffee</div>
+                    </div>
+                    <!-- Προσθέστε περισσότερες κάρτες εδώ -->
+                </div>
             </div>
-        </section>
-        <section id="menu">
-            <h2>Μενού</h2>
-            <p>Απολαύστε την ποικιλία των καφέδων μας και των νόστιμων σνακ</p>
-        </section>
-        <section id="offers">
-            <h2>Προσφορές</h2>
-            <p>Δες τις προσφορές μας για τον μήνα!</p>
-        </section>
-        <section id="contact">
-            <h2>Επικοινωνία</h2>
-            <p>Διεύθυνση: Χαριλάου Τρικούπη 89, Εξάρχεια, Αθήνα</p>
-            <p>Τηλέφωνο: 215-5503754</p>
-            <p>Email: info@todentrotoukaffe.gr</p>
-        </section>
-        <section id="news">
-            <h2>Νέα</h2>
-            <p>Μείνετε ενημερωμένοι για τα τελευταία νέα μας!</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Το Δέντρο του Καφέ</p>
+        <div class="container">
+            <p>&copy; 2024 Το Δέντρο του Καφέ</p>
+        </div>
     </footer>
     <script src="scripts.js"></script>
 </body>

@@ -6,10 +6,15 @@ body {
     padding: 0;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header {
     background-color: #6b4226;
     color: white;
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -29,7 +34,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     display: block;
     font-weight: bold;
 }
@@ -38,39 +43,54 @@ nav ul li a:hover {
     background-color: #4d2e1e;
 }
 
-#hero {
+#game {
+    padding: 2rem 0;
+}
+
+.memory-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: 150px;
+    margin: 5px;
     position: relative;
-    text-align: center;
-    color: white;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
 
-#hero img {
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.memory-card .front-face,
+.memory-card .back-face {
     width: 100%;
-    height: auto;
-}
-
-.hero-text {
+    height: 100%;
+    padding: 5px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-section {
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #6b4226;
+    border-radius: 5px;
+    background: #1c7ccc;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    text-align: center;
-    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.memory-card .front-face {
+    background: #ffcd3c;
+    transform: rotateY(180deg);
 }
