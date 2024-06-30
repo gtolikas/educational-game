@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     (function shuffle() {
         cards.forEach(card => {
-            let randomPos = Math.floor(Math.random() * 12);
+            let randomPos = Math.floor(Math.random() * cards.length);
             card.style.order = randomPos;
         });
     })();
